@@ -20,6 +20,10 @@ It contains:
   * To use PDFbox:
     * Download the `.jar`file 
     * Run the command `java -jar pdfbox-app-2.y.z.jar ExtractText [OPTIONS] <inputfile> <outputfile>` (where `y`and `z`are the version numbers of the file you downloaded)
+* Poppler
+  * A tool to convert normal PDF files into `.txt` files
+  * [Download and installation instructions](https://poppler.freedesktop.org/)
+  * Once you have installed Poppler, run the command `pdftotext input.pdf` to output a `.txt` file of the same name in the same directory
 * Google Vision
   * This is just a note to say that we tested Google Vision on some scanned documents (PDF files whose pages are scans of paper documents, not parsable text) with poor results.
 
