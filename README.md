@@ -49,7 +49,7 @@ As an example, **here is an original page from The Litvinenko Inquiry:**
 **And this is the result of processing that same page using Apache PDFbox:**
 
 
-![PDFbox](litvinenko-pdfbox.png)
+![PDFbox](/screenshots/litvinenko-pdfbox.png)
 
 
 As you can see, PDFbox produces a much tidier output, without any of the significant superfluous space that PDFminer produces.
