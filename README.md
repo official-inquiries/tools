@@ -28,14 +28,13 @@ It contains:
   * This is just a note to say that we tested Google Vision on some scanned documents (PDF files whose pages are scans of paper documents, not parsable text) with poor results.
 
 # Comparison of tools
-## PDFMiner vs. Apache PDFbox
-We have tested PDFMiner and Apache PDFbox on pages from:
+## PDFMiner vs. Apache PDFbox vs. Poppler
+As an example of a comparison, we have tested PDFMiner and Apache PDFbox and Poppler on pages from:
 * The Iraq Inquiry
 * The Senate PSI Report into the Financial Crisis
-* The Leveson Inquiry
 * The Litvinenko Inquiry
 
-In each case, Apache PDFbox showed advantages over PDFMiner (which was our default tool at the time).
+In each case, Apache PDFbox showed noticeable advantages over PDFMiner (which was our default tool at the time) and some over Poppler.
 
 As an example, **here is an original page from The Litvinenko Inquiry:**
 
@@ -50,13 +49,18 @@ As an example, **here is an original page from The Litvinenko Inquiry:**
 ![PDFMiner page 3](/screenshots/litvinenko-pdfminer-3.png)
 
 
+**Here it is processed using Poppler:**
+
+
+![Poppler](/screenshots/litvinenko-poppler.png)
+
+
 **And this is the result of processing that same page using Apache PDFbox:**
 
 
 ![PDFbox](/screenshots/litvinenko-pdfbox.png)
 
-
-As you can see, PDFbox produces a much tidier output, without any of the significant superfluous space that PDFminer produces.
+As you can see, PDFbox produces a much tidier output, without any of the significant superfluous space that PDFminer produces. Poppler is also quite tidy, but has the problem of putting the paragraph letters on a separate line to the paragraphs.
 
 # Suggesting a new tool
 
